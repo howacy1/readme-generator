@@ -21,13 +21,13 @@ const questions = () => {
         {
             type: 'input',
             name: 'installation',
-            message: 'What are the installation instructions for you project?',
+            message: 'What are the installation instructions for your project?',
         },
 
         {
             type: 'input',
             name: 'contributor',
-            message: 'List Contributors to this Project',
+            message: 'List Contributors to this project',
         },
 
         {
