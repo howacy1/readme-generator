@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { generateMarkdown } = require('./utils/generateMarkdown');
 
-
+// Prompts the questions for title, project description, installation, contributors, tests, github username, email adress, and licenses.
 const questions = () => {
     return inquirer.prompt([
 
@@ -58,7 +58,7 @@ const questions = () => {
     ])
 };
 
-
+// function to write the readme file
 const writeToFile = (fileName, data) => {
     fs.writeFileSync(fileName, data, err => {
         if (err) {
@@ -67,7 +67,7 @@ const writeToFile = (fileName, data) => {
     })
 };
 
-
+// call to initialize
 function init() {
     questions()
     .then((data) => {
